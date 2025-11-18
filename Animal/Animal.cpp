@@ -174,48 +174,79 @@ public:
 		Animal::Init();
 		cout << "Enter a say 1- yes 2 - no";
 		cin >> say;
+		cout << "Enter a color: ";
+		cin >> color;
 	}
 
 	bool Check_say()
 	{
 		if (say == 1)
 		{
-			cout << "\nSaying";
+			cout << " Yes ";
 			return true;
 		}
 		else if (say == 2)
 		{
-			cout << "Ne saying";
+			cout << " No ";
 			return false;
 		}
 	}
 };
 
+class Shark : public Animal {
+	int bite_force;
+public:
+	Shark(){}
+	void Init()
+	{
+		Animal::Init();
+		cout << "Enter a bite force: ";
+		cin >> bite_force;
+	}
+
+	void Print()
+	{
+		Animal::Print();
+		cout << "Bite force: " << bite_force << endl;
+	}
+
+
+};
+
 int main()
 {
-
+	cout << "Animal-------------------\n";
 	Animal obj;
 	obj.Init();
 	cout << "\n";
 	obj.Print();
-
-	//cout << "\n";
-	//Elefant obj2;
-	//obj2.Init();
-	//cout << "\n";
-	//obj2.Print();
-
-
-	//cout << "\n";
-	//Penguin obj3;
-	//obj3.Init();
-	//cout << "\n";
-	//obj3.Print();
-
 	cout << "\n";
+
+	cout << "Elefant-------------------\n";
+	Elefant obj2;
+	obj2.Init();
+	cout << "\n";
+	obj2.Print();
+	cout << "\n";
+
+
+	cout << "Penguin------------------\n";
+	Penguin obj3;
+	obj3.Init();
+	cout << "\n";
+	obj3.Print();
+	cout << "\n";
+
+	cout << "Parrot-------------------\n";
 	Parrot obj4;
 	obj4.Init();
 	cout << "\n";
 	obj4.Print();
+	cout << "\n";
 
+	cout << "Shark----------------------\n";
+	Shark obj5;
+	obj5.Init();
+	cout << "\n";
+	obj5.Print();
 }
