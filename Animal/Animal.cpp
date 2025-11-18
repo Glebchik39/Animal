@@ -1,64 +1,6 @@
 #include<iostream>
+#include <string>
 using namespace std;
-
-//class Human
-//{
-//protected:
-//	string name;
-//	int age;
-//public:
-//	Human() {}
-//	Human(string n, int a)
-//	{
-//		name = n;
-//		age = a;
-//		cout << "Human constructor";
-//	}
-//	void Print()
-//	{
-//		cout << "Name: " << name << "\tAge: " << age << endl;
-//	}
-//};
-//
-//class Student : public Human
-//{
-//	/*string name;
-//	int age;*/
-//	int year;
-//	double Average;
-//public:
-//	Student() {}
-//	Student(string n, int a, int y, double Av) : Human(n, a)
-//	{
-//		year = y;
-//		Average = Av;
-//		cout << "Student constructor";
-//	}
-//	void Print()
-//	{
-//		Human::Print();
-//		cout << "Year: " << year << "\t Average: " << Average << endl;
-//	}
-//};
-//
-//class teacher : public Human {
-//	string subject;
-//	double sallay;
-//	string academy;
-//
-//public:
-//	teacher(string sub, double sal, string acad) {
-//
-//		subject = sub;
-//		sallay = sal;
-//		academy = acad;
-//	}
-//	void Print() {
-//		Human::Print();
-//		cout << "Subject" << subject << "\t Sallay" << sallay << "\t Academy";
-//	}
-//};
-
 
 
 class Animal {
