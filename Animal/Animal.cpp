@@ -157,38 +157,70 @@ public:
 
 int main()
 {
-	cout << "Animal-------------------\n";
-	Animal obj;
-	obj.Init();
-	cout << "\n";
-	obj.Print();
-	cout << "\n";
+	//cout << "Animal-------------------\n";
+	//Animal obj;
+	//obj.Init();
+	//cout << "\n";
+	//obj.Print();
+	//cout << "\n";
 
-	cout << "Elefant-------------------\n";
-	Elefant obj2;
-	obj2.Init();
-	cout << "\n";
-	obj2.Print();
-	cout << "\n";
+	//cout << "Elefant-------------------\n";
+	//Elefant obj2;
+	//obj2.Init();
+	//cout << "\n";
+	//obj2.Print();
+	//cout << "\n";
 
 
-	cout << "Penguin------------------\n";
-	Penguin obj3;
-	obj3.Init();
-	cout << "\n";
-	obj3.Print();
-	cout << "\n";
+	//cout << "Penguin------------------\n";
+	//Penguin obj3;
+	//obj3.Init();
+	//cout << "\n";
+	//obj3.Print();
+	//cout << "\n";
 
-	cout << "Parrot-------------------\n";
-	Parrot obj4;
-	obj4.Init();
-	cout << "\n";
-	obj4.Print();
-	cout << "\n";
+	//cout << "Parrot-------------------\n";
+	//Parrot obj4;
+	//obj4.Init();
+	//cout << "\n";
+	//obj4.Print();
+	//cout << "\n";
 
-	cout << "Shark----------------------\n";
-	Shark obj5;
-	obj5.Init();
-	cout << "\n";
-	obj5.Print();
+	//cout << "Shark----------------------\n";
+	//Shark obj5;
+	//obj5.Init();
+	//cout << "\n";
+	//obj5.Print();
+
+
+	Animal* animal = nullptr;
+
+	int choice = 0;
+
+	cout << "Enter a animal: " << endl;
+	cout << "1.Elefant" << endl;
+	cout << "2.Penguin" << endl;
+	cout << "3.Parrot" << endl;
+	cout << "4.Shark" << endl;
+	switch (choice)
+	{
+	case 1:
+		animal = new Elefant;
+		animal->Init();
+	case 2:
+		animal = new Penguin;
+		animal->Init();
+	case 3:
+		animal = new Parrot;
+		animal->Init();
+	case 4:
+		animal = new Shark;
+		animal->Init();
+	default:
+		cout << "Error";
+		break;
+	}
+
+	animal->Print();
+	delete animal;
 }
